@@ -2,12 +2,12 @@
 - Original: https://github.com/jeremy-jr-benthum/tor-button/releases 
 ## Changes & Update (Best configuration for performance)
 - tor 0.4.1.6 (2019-11-15)
-- geoip (2019-10-08)
-- geoip6
-- torrc
+- geoip - lasest
+- geoip6 - lasest
+- torrc - lasest
 ## Usage:
 - Download all files, create new folder `C:\win` and copy all file to this directory
-- Run `TOR Launcher.exe` (hidden launcher) - Virustotal : 3/70
+- Run `TOR Launcher.exe` x64 (hidden launcher) - Virustotal : 3/70
 - OR `run.bat` for GUI launcher
 ### Using Hidden Launcher: 
 - Re-launch (`TOR Launcher.exe`) to change tor identity
