@@ -10,8 +10,8 @@
 - Download extension for chrome : https://chrome.google.com/webstore/detail/browse-with-onion/hfddekpiekhlkkgeaobcdkeonpkinipo
 - Open that extension , modified textarea to `*.torproject.org*,*.ipleak.net*,*.onion*` then close that modal.
 - Run `TOR Launcher.exe` x64 (hidden launcher) - Virustotal : 3/70
-- OR `run.bat` for GUI launcher
-- Final step! back to extension, click the connect icon.
+- OR `run.bat` for GUI launcher , and wait until 100% 
+- Final step! back to extension, click the connect icon to blind TOR to browser..
 ### Using Hidden Launcher: 
 - Re-launch (`TOR Launcher.exe`) to change tor identity
 - Using task manager to kill `tor.exe` and `node.exe` for exit tor.
