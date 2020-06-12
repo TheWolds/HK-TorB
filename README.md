@@ -1,7 +1,7 @@
 # Tor Browser Button add-on files (Windows) by HOAKHUYA
 - Original: https://github.com/jeremy-jr-benthum/tor-button/releases 
 ## Changes & Update (Best configuration for performance)
-- tor 0.4.3.3 (2020-06-13)
+- tor 0.4.3.5 (2020-06-13)
 - geoip - lasest
 - geoip6 - lasest
 - torrc - lasest
