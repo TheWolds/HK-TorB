@@ -10,13 +10,13 @@ stdin.setEncoding('utf8');
 var config = {
   "info": function () {
  //   console.log("\n");
-    console.log(clc.green("---- "), clc.greenBright("Configure TOR by press number"), clc.green(" ----"));
-    console.log(clc.blackBright("1. Start TOR (running now)"));
-    console.log(clc.white("2. Log connection info (advanced)"));
-    console.log(clc.white("3. Debug connection (advanced)"));
-    console.log(clc.cyanBright("4. New identity"));
-    console.log(clc.cyanBright("5. Restart TOR"));
-    console.log(clc.blackBright("6. Exit TOR (just close this window)"));
+    console.log(clc.green("---- "), clc.greenBright("Sử dụng phím số tương ứng để kích hoạt các chức năng"), clc.green(" ----"));
+    console.log(clc.blackBright("1. Bắt đầu tor (đang chạy rồi)"));
+    console.log(clc.white("2. Bật chế độ ghi lại lịch sử kết nối (nâng cao)"));
+    console.log(clc.white("3. Bật chế độ soát lỗi (nâng cao)"));
+    console.log(clc.cyanBright("4. Thay đổi IP (danh tính) khác"));
+    console.log(clc.cyanBright("5. Khởi động lại TOR"));
+    console.log(clc.blackBright("6. Thoát TOR (Tắt của sổ này là được)"));
     console.log(clc.green("-----------------------------------------"));
   },
   "start": function () {
@@ -30,7 +30,7 @@ var config = {
     tor.stdout.on('data', (data) => {
       console.log(clc.green(data.toString()));
       if (data.toString().indexOf("100%") !== -1) {
-        console.log(clc.magentaBright("----- [HOAKHUYA is connected successfully]"));
+        console.log(clc.magentaBright("----- [Đường hầm TOR đã được thiết lập thành công]"));
         config.info();
       }
     });
@@ -39,13 +39,13 @@ var config = {
   "new": function () {
     console.log("\n");
     console.log(clc.blueBright("----------------------------------------------"));
-    console.log(clc.blueBright("-------- Switch to clean circuits---- --------"));
+    console.log(clc.blueBright("-------- Đang nhận một danh tính khác --------"));
     console.log(clc.blueBright("----------------------------------------------"));
     console.log("\n");
     var control = new TorControl({password: 'lM6!fN0:cV5J4fT9aO9xM7eE4',persistent: false});
     control.signalNewnym(function (error, status) {
       if (error) return console.log(clc.redBright("> error: "), clc.redBright(error));
-      else console.log(clc.greenBright("> status: "), clc.greenBright(status.messages[0]));console.log(clc.magentaBright("----- [New identity approved]"));
+      else console.log(clc.greenBright("> status: "), clc.greenBright(status.messages[0]));console.log(clc.magentaBright("----- Đã thiết lập thành công đường hầm mới"));
       config.info();
     });
   },

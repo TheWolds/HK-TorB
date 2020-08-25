@@ -1,1 +1,3 @@
-node.exe run.js
+MODE 145,30
+cd %cd%
+@echo off && node run.js
