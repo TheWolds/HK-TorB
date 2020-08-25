@@ -12,7 +12,7 @@ var config = {
  //   console.log("\n");
     console.log(clc.green("---- "), clc.greenBright("Sử dụng phím số tương ứng để kích hoạt các chức năng"), clc.green(" ----"));
     console.log(clc.blackBright("1. Bắt đầu tor (đang chạy rồi)"));
-    console.log(clc.white("2. Bật chế độ ghi lại lịch sử kết nối (nâng cao)"));
+    console.log(clc.white("2. Xem lại lịch sử kết nối (nâng cao)"));
     console.log(clc.white("3. Bật chế độ soát lỗi (nâng cao)"));
     console.log(clc.cyanBright("4. Thay đổi IP (danh tính) khác"));
     console.log(clc.cyanBright("5. Khởi động lại TOR"));
