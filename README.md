@@ -2,7 +2,7 @@
 - Original: https://github.com/jeremy-jr-benthum/tor-button/releases 
 ## Changes & Update (Best configuration for performance)
 - tor 0.4.3.6 (2020-07-09)
-- fixed all issue about geoip, run.js , support vietnamese language at `run_vie.bat` & `run_vie.cmd`
+- fixed all issue related to `geoip`, `run.js` , support vietnamese language at `run_vie.bat` & `run_vie.cmd`
 - Please extract all files, `tor.exe` must available at `C:\TOR\tor.exe` after extract.
 ### old changes
 - tor 0.4.3.5 (2020-06-13)
